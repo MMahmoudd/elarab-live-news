@@ -1,0 +1,33 @@
+@media #{$tablet}{
+    header{
+        .navbar-collapse{
+            li{
+                h2{
+                    a{
+                        width: 200px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .wrapper{
+        padding-top: 99px; 
+      }
+}
+@media #{$mobile}{
+    header{
+        .right{
+            left: 0;
+            position: absolute;
+        }
+            .brand{
+                margin: 0 0 0 auto !important;
+                padding: 10px;
+            }
+            .social{
+                display: none;
+            }
+
+        }
+    }

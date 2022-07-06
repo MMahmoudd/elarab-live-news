@@ -1,0 +1,96 @@
+header{
+    .header-nav{
+        align-items: center;
+        background-color: #fff;
+        .right{
+            padding: 10px 0;
+            display: flex;
+            button{
+                background-color: transparent;
+                border: none;
+                color: $secondColor;
+                box-shadow: none;
+                outline: none;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    text-decoration: none;
+                    color: $mainColor;
+                }
+                &.dropdown{
+                    a{
+                        color: $secondColor;
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            text-decoration: none;
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+        .brand{
+            margin: auto;
+            .navbar-brand{
+                img{
+                    width: 100px;
+                }
+            }
+        }
+        .social{
+            padding: 10px 0;
+            a{
+                color: $secondColor;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    text-decoration: none;
+                    color: $mainColor;
+                }
+            }
+            i{
+                padding: 10px 3px;
+            }
+        }
+    }
+    nav{
+        padding: 0 !important;
+        background-color: $secondColor;
+        .collapce{
+            i{
+                display: block;
+                color: #fff;
+                width: 20px;
+                height: 3px;
+                border-radius: 10px;
+                background-color: #fff;
+                margin: 5px;
+            }
+        }
+        .navbar-collapse{
+            ul{
+                margin: auto;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0;
+                li{
+                    margin: auto;
+                    padding: 7px 0;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        background-color: $mainColor;
+                    }
+                    h2{
+                        font-size: 16px;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                    }
+                    a{
+                        color: #fff !important;
+                    }
+                    &.active{
+                        border-bottom: 2px solid $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
